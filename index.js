@@ -9,6 +9,7 @@ app.use(cors())
 connectDB()
 app.use(express.json({ extended: false }))
 app.use('/api/userDevices', require('./API/Devices'))
+app.use('/api/userRooms', require('./API/Rooms'))
 
 app.listen(process.env.PORT || 3001)
 
