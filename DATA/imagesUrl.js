@@ -1,5 +1,6 @@
 const imagesUrl = {
     sala: 'https://image.flaticon.com/icons/png/512/1375/1375689.png',
+    quarto: 'https://www.flaticon.com/br/premium-icon/icons/svg/2652/2652612.svg',
     cozinha: 'https://www.flaticon.com/br/premium-icon/icons/svg/1839/1839736.svg',
     banheiro: 'https://www.flaticon.com/br/premium-icon/icons/svg/3139/3139903.svg',
     jantar: 'https://image.flaticon.com/icons/png/512/1983/1983293.png',
