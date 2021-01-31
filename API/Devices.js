@@ -25,8 +25,8 @@ route.post('/save', async(req, res) => {
 })
 
 route.post('/get', async (req, res) => {  
-    const room = req.body.room
-    const model = mongoose.model(`${room}`, deviceSchema)
+    const roomName = req.body.roomName
+    const model = mongoose.model(`${roomName}`, deviceSchema)
 
     await model.find({}, (err, doc) => {
         if (!err) {

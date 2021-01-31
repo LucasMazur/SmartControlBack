@@ -9,7 +9,7 @@ route.post('/save', async(req, res) => {
     const { roomName } = req.body
     let room = {};
     room.roomName = roomName
-    room.imageUrl= imageUrl[roomName];
+    room.imageUrl= imageUrl[roomName]
 
     let roomModel = new Room(room)
     
