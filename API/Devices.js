@@ -5,10 +5,11 @@ const deviceSchema = require('../DB/DeviceSchema')
 const route = express.Router()
 
 route.post('/save', async(req, res) => {
-    const { roomName, deviceName, ip } = req.body
+    const { roomName, deviceName, ip, out } = req.body
     let device = {};
     device.deviceName = deviceName
     device.ip = ip
+    device.out = out
 
     const model = mongoose.model(`${roomName}`, deviceSchema)
 
